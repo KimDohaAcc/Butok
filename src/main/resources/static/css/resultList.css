@@ -1,0 +1,327 @@
+section {
+    display: flex;
+    position: relative;
+}
+
+.line {
+    border: 1px solid black;
+}
+
+.dealLink:hover {
+    cursor: pointer;
+}
+
+#login-button {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 38px;
+    height: 38px;
+    background-position: -92px -370px;
+    line-height: 999em;
+    vertical-align: top;
+    overflow: visible;
+    z-index: 3;
+}
+
+.btnArea {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#closeBtn {
+    width: 24px;
+    height: 24px;
+}
+
+#closeBtn2 {
+    width: 24px;
+    height: 24px;
+}
+
+#map {
+    width: 100vw;
+    height: 40vw;
+    z-index: 1;
+}
+
+#sideBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    width: max-content;
+    max-height: 65vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F1F1;
+    color: #146C94;
+    z-index: 3;
+    padding: 0.5%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: 5vh;
+}
+
+.search select {
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    width: 80px;
+    text-align: center;
+}
+
+.search input[type="text"] {
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.search input[type="button"] {
+    background-color: #19A7CE;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    width: 50px;
+}
+
+.search input[type="button"]:hover {
+    background-color: #146C94;
+}
+
+#detailArea {
+    display: none;
+    flex-direction: column;
+    width: 45vw;
+    max-width: 45vw;
+    height: 60vh;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+#detailView {
+    margin-bottom: 30px;
+}
+
+.like {
+    margin-top: 15px;
+}
+
+.monthlyRent {
+    padding: 10px 0;
+    border-bottom: 3px solid #AFD3E2;
+}
+
+.monthlyRent:last-child {
+    border-bottom: none;
+}
+
+.monthlyRent > ul > li {
+    list-style: none;
+}
+
+#viewMoreMsg {
+    font-size: 12px;
+    text-align: center;
+}
+
+#chart_div {
+    margin-bottom: 30px;
+}
+
+#commentBtnArea {
+    display: inline-block;
+}
+
+button {
+    border-radius: 15px;
+    background-color: #19A7CE;
+    color: white;
+}
+
+button:hover {
+    background-color: #146C94;
+}
+
+#commentBtn {
+    width: 150px;
+    height: 30px;
+}
+
+#viewMore {
+    width: 60px;
+    height: 30px;
+}
+
+#commentArea {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    left: 48vw;
+    top: 0;
+    width: 45vw;
+    height: 65vh;
+    padding: 10px;
+    overflow-y: scroll;
+    z-index: 2;
+    background-color: #F6F1F1;
+    color: #146C94;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+}
+
+.profileArea {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+#myPreference {
+    display: flex;
+    width: max-content;
+}
+
+#myPreference > span {
+    display: flex;
+    width: 7vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+#checkBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-left: 1vw;
+}
+
+.markImages {
+    width: 24vw;
+    height: auto;
+}
+
+.noRentImg {
+    width: 18vw;
+    height: auto;
+    margin-bottom: 1vw;
+}
+#chart_div{
+    min-width: 25vw;
+    min-height: 30vh;
+}
+
+#pageBox{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pageBox > li {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#pageBox > li:hover {
+    background-color: #eee;
+}
+
+#emptySearchResult {
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#emptySearchResult > h1 {
+    color: #d95050;
+    text-align: center;
+}
+
+
+
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#image {
+    margin-bottom: 10px;
+}
+
+#comment-content {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: none;
+    margin-bottom: 5px;
+}
+
+#img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    background-size: cover;
+}
+
+#img-box input[type="hidden"] {
+    display: none;
+}
+
+#register {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end; /* add this property to move the button to the right */
+}
+
+#register:hover {
+    background-color: #146C94;
+}
+
+.comments {
+    width: 100%;
+    margin-top: 20px;
+}

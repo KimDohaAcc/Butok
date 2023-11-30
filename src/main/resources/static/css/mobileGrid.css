@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+@media (max-width: 576px) {
+    .header, .section, .footer {
+        display: none;
+    }
+
+    .mHeader, .mSection, .mNavi {
+        display: flex;
+    }
+
+    .container {
+        display: grid;
+        height: 100%;
+        max-height: 100%;
+        width: 100vw;
+        max-width: 480px;
+        grid-template-areas:
+        "mHeader"
+        "mSection"
+        "mapSection"
+        "mNav"
+        ;
+    }
+
+     .mHeader {
+        grid-area: mHeader;
+        display: flex;
+        flex-flow: column;
+        max-width: 480px;
+        width: 100%;
+        height: 25%;
+    }
+
+    .mLogoArea {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mSection {
+        grid-area: mSection;
+        flex-flow: column;
+        max-height: 150%;
+        height: 100%;
+        max-width: 100vw;
+        overflow-y: scroll;
+        padding-bottom: 5vh;
+    }
+
+    .mLogoArea > a > img {
+        position: relative;
+        max-width: 60vw;
+        width: auto;
+        height: auto;
+    }
+
+    .mapSection {
+        grid-area: mapSection;
+        flex-flow: column;
+        max-height: 150%;
+        height: 100%;
+        overflow-y: scroll;
+        padding-bottom: 5vh;
+    }
+
+    .mNavi {
+        grid-area: mNav;
+        width: 100vw;
+        max-height: 10%;
+        height: 10%;
+        border-top: 2px solid black;
+        padding-top: 2vh;
+    }
+
+    #mobile-nav-list {
+        display: flex;
+        width: 100%;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+
+    .mobile-searchArea {
+        display: flex;
+        width: 100vw;
+        margin-top: 10px;
+        padding-right: 6vw;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .mobile-searchArea input[type="text"] {
+        width : 50vw;
+        font-size: 15px;
+    }
+
+    #mobile-nav-list > li > a > img {
+        width: 1.875rem;
+        height: 1.875rem;
+        margin-right: 0.625rem;
+    }
+
+    .mobile-searchArea select {
+        margin-right: 0.625rem;
+        height: 1.875rem;
+        border-radius: 0.9375rem;
+        border: none;
+        width: 4rem;
+        text-align: center;
+    }
+
+    .mobile-searchArea input[type="text"] {
+        box-sizing: border-box;
+        border-radius: 0.9375rem;
+        border: none;
+        height: 1.875rem;
+        width : 14rem;
+    }
+
+    .mobile-searchArea input[type="button"] {
+        background-color: #19A7CE;
+        color: white;
+        border-radius: 0.9375rem;
+        border: none;
+        height: 1.875rem;
+        cursor: pointer;
+        width: 3.125rem;;
+    }
+
+    .mobile-searchArea input[type="button"]:hover {
+        background-color: #146C94;
+    }
+
+    .login-container {
+        width: 100%;
+    }
+
+    #login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 2.5vh;
+    }
+
+    /*------------------------slide부분----------------*/
+
+    .mFamous {
+        display: block;
+        height: 100%;
+        max-height: 100%;
+    }
+
+    .mobile-slideshow-container {
+        position: relative;
+        overflow: hidden;
+        margin: auto;
+        width: 100%;
+    }
+
+    .mobile-slide-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-slide-wrapper div {
+        width: 40%;
+        height: 20vh;
+        text-align: center;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        padding: 16px;
+        color: #ffffff;
+        background-color: #AFD3E2;
+        z-index: 1;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev:hover, .next:hover {
+        bckground-color: #146C94;
+    }
+
+    .mobile-deal-box>ul>li{
+        list-style: none;
+    }
+    .mobile-deal-box>ul{
+        padding: 0;
+    }
+
+    .mobile-list{
+        color: red;
+    }
+
+     h2{
+        margin-top:40px;
+        text-align: center;
+        color: #146C94;
+    }
+    h3{
+        text-align: center;
+        color: #146C94;
+    }
+}

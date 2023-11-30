@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.mHeader, .mSection, .mNavi {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section"
+    "footer"
+    ;
+}
+
+.header {
+    grid-area: header;
+}
+
+section {
+    grid-area: section;
+    height: 78vh;
+    max-height: 78vh;
+}
+
+footer {
+    grid-area: footer;
+    position: relative;
+}
